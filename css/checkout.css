@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #4a5568;
+  --background-color: #f7fafc;
+  --text-color: #2d3748;
+  --border-color: #e2e8f0;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.checkout-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--white-color);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.card-header i {
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.form-control {
+  border-color: var(--border-color);
+  border-radius: 6px;
+  padding: 0.625rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.payment-option {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.payment-option:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(74, 85, 104, 0.03);
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #34495e;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.table th {
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sticky-top {
+  top: 2rem;
+}
+
+.alert {
+  border-radius: 6px;
+  background-color: #fff5f5;
+  border-color: #fecaca;
+  color: #7f1d1d;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+      padding: 1rem 0.5rem;
+  }
+
+  .sticky-top {
+      position: static;
+  }
+}
